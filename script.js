@@ -13,13 +13,13 @@ const destinations = [
   },
   {
     id: 3,
-    image: 'images/Kanyakumari.jpeg',
+    image: 'images/kanyakumari.jpeg',
     name: 'Kanyakumari',
     
   },
   {
     id: 4,
-    image: 'images/Kovalam.jpeg',
+    image: 'images/Kovalam.png',
     name: 'Kovalam',
    
   },
@@ -31,7 +31,7 @@ const destinations = [
   },
   {
     id: 6,
-    image: 'images/Museum.jpeg',
+    image: 'images/museum.jpeg',
     name: 'Museum',
     
   },
