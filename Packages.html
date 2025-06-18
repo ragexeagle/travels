@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiv yodha </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inspiration&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="Packages.css" />
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo navbar-brand"><img src="./images/logo.jpg" alt="" srcset=""></a>
+
+    <!-- Desktop Menu -->
+    <nav class="desktop-menu">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="index.html" class="nav-link">About</a>
+      <a href="index.html" class="nav-link">Service</a>
+      <a href="FAQ.html" class="nav-link">Info</a>
+      <a href="index.html" class="nav-link">Contact</a>
+      <a href="Vehicles.html" class="nav-link">Vehicle</a>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" onclick="toggleMobileMenu()">
+      <span class="menu-icon" id="menu-icon">&#9776;</span>
+      <span class="close-icon" id="close-icon" style="display: none;">&times;</span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu Content -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="index.html" class="mobile-nav-link">About</a>
+    <a href="index.html" class="mobile-nav-link">Service</a>
+    <a href="FAQ.html" class="mobile-nav-link">Info</a>
+    <a href="index.html" class="mobile-nav-link">Contact</a>
+    <a href="Vehicles.html" class="mobile-nav-link">Vehicle</a>
+  </div>
+</header>
+
+<!--Navbar ends-->
+
+
+  <div class="container my-5">
+    <h1>Our Packages</h1>
+    <p>Our travel packages are designed to give you the perfect balance of adventure, relaxation, and cultural discovery. Whether you're seeking scenic landscapes, rich heritage sites, or peaceful retreats, our itineraries offer something for every kind of traveler. Each package includes carefully planned schedules, comfortable accommodations, and curated highlights to ensure a smooth and memorable experience from start to finish. With trusted service and attention to detail, we make every trip feel effortless and extraordinary.</p>
+  <div class="row  mt-5" id="tripCardsContainer">
+    <!-- Trip cards injected via JavaScript -->
+  </div>
+</div>
+
+<!-- Itinerary Modal -->
+<div id="itinerary-modal" class="modal hidden">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div>
+        <h2 id="modal-title"></h2>
+        <p>Detailed Itinerary</p>
+      </div>
+      <div>
+        <button class="close-btn" onclick="closeModal()">✕</button>
+      </div>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-row row">
+        <div class="details-row row">
+          <div class="col-lg-4"><img src="./images//logo.jpg" alt="" srcset=""></div>
+
+        <div class="col-lg-4 links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 location">
+          <h3>Our Details</h3>
+          <ul>
+            <li><i class="fa fa-thumb-tack" aria-hidden="true"></i> Kalliyoor , Kerala</li>
+            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 7994911404</a></li>
+            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 7736114693</a></li>
+            <li><a href="mailto:shivayodha2024@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> shivayodha2024@gmail.com</a></li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="footer-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5581.453458549862!2d77.0126791721624!3d8.432700287832667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05aff77f19ec33%3A0xc0f80ec910e7d002!2sKalliyoor%2C%20Kerala!5e0!3m2!1sen!2sin!4v1746268515455!5m2!1sen!2sin"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+  
+        <div class="footer-bottom">
+         <p>© Shiva Yodha 2025, All Rights Reserved</p>
+  
+        <div class="footer-social">
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/shiva.yodha2024" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1APKKLjFyr/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+       </div>
+    </div>
+  
+        
+      <div class="contact-icon">
+        <div class="whatsapp-icon">
+          <a href="https://wa.me/7994911404"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="Call-icon">
+          <a href="tel:7736114693"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+
+  </div>
+ </footer>
+
+<!-- Footer Section ends-->
+  <script src="script.js"></script>
+  <script src="Package_data.js"></script>
+  <script src="Package.js"></script>
+
+
+</body>
+</html>

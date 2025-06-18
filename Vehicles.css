@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+.card img {
+  height: 180px;
+  object-fit: contain;
+}
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}

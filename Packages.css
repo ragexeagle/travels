@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0px;
+  background-color: #ffffff;
+}
+
+.trip-cards-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 50px 0;
+}
+
+.trip-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.trip-card:hover .trip-image img {
+  transform: scale(1.1);
+}
+
+.trip-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.trip-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.trip-image .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.trip-image .title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px black;
+}
+
+.trip-image .price-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: orange;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.trip-content {
+  padding: 16px;
+}
+
+.info-bar {
+  background: linear-gradient(to right, orange, darkorange);
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (min-width: 500px) {
+  .info-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.highlights {
+  margin: 10px 0;
+}
+
+.highlights h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.highlights ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.highlights li {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: orange;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+@media (min-width: 500px) {
+  .actions {
+    flex-direction: row;
+  }
+}
+
+button {
+  flex:1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.outline {
+  border: 2px solid orange;
+  background: white;
+  color: orange;
+ 
+}
+
+button.book-now {
+  background: linear-gradient(to right, orange, darkorange);
+  color: white;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal.hidden {
+  display: none;
+}
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+.modal-header {
+  background: linear-gradient(to right, #7e22ce, #9333ea);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-body {
+  padding: 20px;
+}
+.itinerary-day {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.itinerary-header {
+  background: linear-gradient(to right, #fb923c, #f97316);
+  color: white;
+  padding: 12px;
+}
+.day-content {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .day-content {
+    flex-direction: row;
+  }
+}
+.day-image {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.day-details {
+  padding: 16px;
+  flex: 1;
+}
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}

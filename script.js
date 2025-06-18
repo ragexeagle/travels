@@ -1,39 +1,45 @@
 const destinations = [
   {
     id: 1,
-    image: 'https://static.toiimg.com/photo/msid-107700466,width-96,height-65.cms',
-    name: 'Singapore',
-    places: 806,
+    image: 'images/allepy.jpeg',
+    name: 'Allepy',
+    
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1568515387631-8b650bbcdb90?q=80',
-    name: 'New York',
-    places: 220,
+    image: 'images/Azhimala.jpeg',
+    name: 'Azhimala',
+    
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80',
-    name: 'Maldives',
-    places: 648,
+    image: 'images/Kanyakumari.jpeg',
+    name: 'Kanyakumari',
+    
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80',
-    name: 'Paris',
-    places: 372,
+    image: 'images/Kovalam.jpeg',
+    name: 'Kovalam',
+   
   },
   {
     id: 5,
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3HVe76jaQd_dQwtjJoh9q87Tm52Ev1vWEuw&s',
-    name: 'London',
-    places: 412,
+    image: 'images/Munnar.jpeg',
+    name: 'Munnar',
+   
   },
   {
     id: 6,
-    image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80',
-    name: 'Dubai',
-    places: 530,
+    image: 'images/Museum.jpeg',
+    name: 'Museum',
+    
+  },
+   {
+    id: 7,
+    image: 'images/Padmanabha swami temple.jpeg',
+    name: 'Padmanabha <br>swami temple',
+    
   },
 ];
 
@@ -58,7 +64,6 @@ function renderCarousel() {
       <img src="${dest.image}" alt="${dest.name}" />
       <div class="details">
         <h3>${dest.name}</h3>
-        <p>${dest.places} Places</p>
       </div>
     `;
     carousel.appendChild(card);
@@ -282,3 +287,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
