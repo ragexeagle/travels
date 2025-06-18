@@ -22,7 +22,7 @@ const trips = [
         title: "Arrival & Sightseeing",
         description: "11:30 AM Pick up from Trivandrum Airport, check-in, visit Chitra Art Gallery, Kuthiramalika Palace Museum, Napier Museum & Zoo, Aazhimala Siva Statue, Kovalam Lighthouse and Beaches.",
         accommodation: "Stay at Trivandrum",
-        imageUrl: "images/Museum.jpeg"
+        imageUrl: "images/Museum.png"
       },
       {
         day: 2,
@@ -30,7 +30,7 @@ const trips = [
         title: "Kanyakumari Day Tour",
         description: "8:00 AM Breakfast. Depart to Kanyakumari. Enroute visit Tirparappu Waterfalls and Padmanabhapuram Palace. Sightseeing: Vivekananda Rock, Thiruvalluvar Statue, Gandhi Memorial, Triveni Sangam, Kanyakumari Amman Temple, Sunset Point. Return to Trivandrum.",
         accommodation: "Stay at Trivandrum",
-        imageUrl: "images/Kanyakumari.jpeg"
+        imageUrl: "images/Kanyakumari.png"
       },
       {
         day: 3,
@@ -46,7 +46,7 @@ const trips = [
         title: "Transfer & Sightseeing",
         description: "9:00 AM Breakfast and check out. Transfer to Munnar. Enroute visit Cheeyapara and Valara Waterfalls. Check in at hotel, evening resort leisure.",
         accommodation: "Stay at Munnar",
-        imageUrl: "images/Waterfalls.png"
+        imageUrl: "images/waterfalls.png"
       },
       {
         day: 5,
