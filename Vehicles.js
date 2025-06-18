@@ -31,13 +31,13 @@ const vehicles = [
   },
   {
     name: "Traveller",
-    image: "images/Vehicle-Traveller1.jpeg",
+    image: "images/Vehicle-traveller1.jpeg",
     capacity: "17-Seater",
     type: ""
   },
   {
     name: "Tempo Traveller",
-    image: "images/Vehicle-Traveller3.jpeg",
+    image: "images/Vehicle-traveller3.jpeg",
     capacity: "17-Seater",
     type: ""
   },
