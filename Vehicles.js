@@ -25,7 +25,7 @@ const vehicles = [
   },
   {
     name: "Traveller",
-    image: "images/Vehicle-Traveller.jpeg",
+    image: "images/vehicle-Traveller.jpeg",
     capacity: "17-Seater",
     type: ""
   },
